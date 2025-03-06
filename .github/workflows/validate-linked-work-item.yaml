@@ -1,15 +1,11 @@
 name: 'Validate linked work item'
 
 on: 
-  pull_request:
-    types: 
-      - opened
-      - reopened
-      - synchronize
   pull_request_target:
     types: 
       - opened
       - reopened
+      - edited
       - synchronize
 
 permissions:
@@ -22,4 +18,4 @@ jobs:
     name: check   
     runs-on: ubuntu-latest
     steps:
-      - uses: cosmoconsult/github-actions-pr-is-linked-to-work-item@debug1
+      - uses: cosmoconsult/github-actions-pr-is-linked-to-work-item@main
