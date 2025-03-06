@@ -22,4 +22,4 @@ jobs:
     name: check   
     runs-on: ubuntu-latest
     steps:
-      - uses: cosmoconsult/github-actions-pr-is-linked-to-work-item@3c24859b3730aaea345fe954df293f9656555f40
+      - uses: cosmoconsult/github-actions-pr-is-linked-to-work-item@debug1
